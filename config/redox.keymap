@@ -16,17 +16,17 @@
 
         default_layer {
 // -------------------0--------------------------------------------------------------------------------------------------------------
-// | ESC   |  1  |  2    |   3   |  4  |  5  |                    ---                     |  6    |  7    |  8    |  9   | 0  |   -  |
+// | +     |  1  |  2    |   3   |  4  |  5  |                    ---                     |  6    |  7    |  8    |  9   | 0  |   -  |
 // | TAB   |  Q  |  W    |   E   |  R  |  T  |   ~   |            ---         |  ~        |  Y    |  U    |  I    |  O   | P  |   \  |
 // | CTRL  |  A  |  S    |   D   |  F  |  G  |   [   |            ---         |  ]        |  H    |  J    |  K    |  L   | ;  |  '   |
 // | SHIFT |  Z  |  X    |   C   |  V  |  B  | CTRL_SPACE | DEL | --- | ALT   | GUI_SPACE |  N    |  M    |  ,    |  .   | /  | SHFT |
 // | `     |  +  | LEFT | RIGHT |    GUI     | BKSP  | CTRL     | --- | SPACE | RET   |   ESC     | UP    | DOWN  | UP   |   LOWER   |
             bindings = <
-   &kp ESC   &kp N1      &kp N2   &kp N3 &kp N4   &kp N5                                                 &kp N6    &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+   &kp PLUS  &kp N1      &kp N2   &kp N3 &kp N4   &kp N5                                                 &kp N6    &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
    &kp TAB   &kp Q       &kp W    &kp E  &kp R    &kp T  &kp TILDE                         &kp TILDE     &kp Y     &kp U  &kp I     &kp O    &kp P    &kp BSLH
    &kp LCTRL &kp A       &kp S    &kp D  &kp F    &kp G  &kp LBKT                          &kp RBKT      &kp H     &kp J  &kp K     &kp L    &kp SEMI &kp SQT
    &kp LSHFT &kp Z       &kp X    &kp C  &kp V    &kp B  &kp LC(SPACE) &kp DEL   &kp LALT  &kp LG(SPACE) &kp N     &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-   &kp GRAVE &kp KP_PLUS &kp LEFT &kp RIGHT  &kp LGUI    &kp BSPC      &kp LCTRL &kp SPACE &kp RET       &kp ESC   &kp UP &kp DOWN  &kp UP   &mo 2
+   &kp GRAVE &kp KP_PLUS &kp LEFT &kp RIGHT  &kp LGUI    &kp BSPC      &kp LCTRL &kp SPACE &kp RET       &kp ESC   &kp UP &kp DOWN  &kp UP   &mo 3 
             >;
         };
 
@@ -38,7 +38,7 @@
 // | SHIFT |  Z  |  X    |   C   |  V  |  B  | CTRL_SPACE | DEL | --- | ALT   | GUI_SPACE |  N    |  M    | LEFT | DOWN | RIGHT | SHFT |
 // | `     |  +  | LEFT | RIGHT |    GUI     | BKSP  | CTRL     | --- | SPACE | RET   |   ESC     | UP    | DOWN | UP   | LOWER |
             bindings = <
-   &trans  &trans   &trans  &trans  &trans  &trans                                  &trans          &trans    &trans    &trans     &trans  &trans
+   &trans  &trans   &trans  &trans  &trans  &trans                                  &trans  &trans  &trans    &trans    &trans     &trans
    &trans  &trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans    &trans    &trans     &trans
    &trans  &trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans    &kp UP    &trans     &trans
    &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
