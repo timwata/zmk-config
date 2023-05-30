@@ -38,8 +38,8 @@
 // | SHIFT |  Z  |  X    |   C   |  V  |  B  | CTRL_SPACE | DEL | --- | ALT   | GUI_SPACE |  N    |  M    | LEFT | DOWN | RIGHT | SHFT |
 // | `     |  +  | LEFT | RIGHT |    GUI     | BKSP  | CTRL     | --- | SPACE | RET   |   ESC     | UP    | DOWN | UP   | LOWER |
             bindings = <
-   &trans  &trans   &trans  &trans  &trans  &trans                                  &trans  &trans  &trans    &trans    &trans     &trans
-   &trans  &trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans    &trans    &trans     &trans
+   &trans  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans            &trans  &trans  &trans    &trans    &trans     &trans
+   &trans  &trans   &trans  &trans  &trans  &trans  &bt BT_CLR                  &trans  &trans  &trans  &trans    &trans    &trans     &trans
    &trans  &trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans    &kp UP    &trans     &trans
    &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
    &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
